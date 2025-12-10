@@ -22,7 +22,7 @@
 #include "led_strip.h"
 
 // Configuración del LED RGB WS2812 en ESP32-C6-DevKitC-1
-#define LED_STRIP_GPIO 8
+#define LED_STRIP_GPIO 4
 #define LED_NUMBERS 1
 
 static esp_mqtt_client_handle_t mqtt_client = NULL;
@@ -106,7 +106,7 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
 static void mqtt_app_start(void)
 {
     esp_mqtt_client_config_t mqtt_cfg = {
-        .broker.address.uri = "mqtt://8.8.8.8:1883",
+        .broker.address.uri = "mqtt://3.134.86.43:1883",
         .credentials.username = "esp32",
         .credentials.authentication.password = "12345678",
     };
@@ -120,10 +120,10 @@ static void mqtt_app_start(void)
    If you'd rather not, just change the below entries to strings with
    the config you want - ie #define EXAMPLE_WIFI_SSID "mywifissid"
 */
-#define EXAMPLE_ESP_WIFI_SSID "WMACREAT5G"
+#define EXAMPLE_ESP_WIFI_SSID "WMACREAT"
 #define EXAMPLE_ESP_WIFI_PASS "macreat1307"
 
-#define MQTT_BROKER_URL "http:ec2-3-134-86-43.us-east-2.compute.amazonaws.com"
+#define MQTT_BROKER_URL "mqtt://3.134.86.43:1883"
 
 #define EXAMPLE_ESP_MAXIMUM_RETRY CONFIG_ESP_MAXIMUM_RETRY
 
