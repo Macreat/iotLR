@@ -1,0 +1,7 @@
+{
+  "idf.portWin": "COM6",
+  "idf.monitorPort": "COM6",
+  "idf.openOcdConfigs": [
+    "board/esp32-wrover-kit-3.3v.cfg"
+  ]
+}
