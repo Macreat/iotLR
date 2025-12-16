@@ -36,10 +36,6 @@ To keep the work organized, this repo uses a **branching model**:
   Development branch. Contains **ongoing work** and integrates features before merging into `master`.  
   All new features or experiments should be branched off `dev`.
 
-- **`dWork`**
-  Scratchpad branch. Used for **daily experiments, tests, or quick prototypes**.  
-  Not guaranteed to be stable; changes here can be force-pushed or rebased.
-
 ---
 
 ## Repository Structure
@@ -65,10 +61,8 @@ To keep the work organized, this repo uses a **branching model**:
 
 - [x] Create README base
 - [x] Structure repository
-- [ ] Add first ESP-IDF firmware sample under `ESPSamples/`.
-- [ ] Create backend skeleton (FastAPI + SQLite).
-- [ ] Document development environments in `content/`.
-- [ ] Start a simple DevLab (ESP32 + DHT22 + MQTT → dashboard).
+- [x] Add first ESP-IDF firmware sample under `ESPSamples/`.
+- [x] Start a simple DevLab (ESP32 + DHT22 + MQTT → dashboard).
 
 ---
 
