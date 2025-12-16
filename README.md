@@ -65,10 +65,10 @@ To keep the work organized, this repo uses a **branching model**:
 
 - [x] Create README base
 - [x] Structure repository
-- [ ] Add first ESP-IDF firmware sample under `ESPSamples/`.
-- [ ] Create backend skeleton (FastAPI + SQLite).
-- [ ] Document development environments in `content/`.
-- [ ] Start a simple DevLab (ESP32 + DHT22 + MQTT → dashboard).
+- [x] Add first ESP-IDF firmware sample under `ESPSamples/`.
+- [x] Document development environments in `content/`.
+- [x] Start a simple DevLab (ESP32 + DHT22 + MQTT → dashboard).
+- [x] project
 
 ---
 

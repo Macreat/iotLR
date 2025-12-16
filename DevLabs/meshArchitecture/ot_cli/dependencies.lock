@@ -1,0 +1,69 @@
+dependencies:
+  cmd_system:
+    dependencies: []
+    source:
+      path: C:\Users\mateo\esp\v5.5\esp-idf\examples\system\console\advanced\components\cmd_system
+      type: local
+    version: '*'
+  espressif/esp_ot_cli_extension:
+    component_hash: 03491d02d3b20bc026d70a891e9c9004bf3bc2f29ca7ae19cbdfe50f207dc938
+    dependencies:
+    - name: espressif/iperf
+      registry_url: https://components.espressif.com
+      require: private
+      version: ^0.1.0
+    - name: idf
+      require: private
+      version: '>=5.0'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.4.0
+  espressif/iperf:
+    component_hash: f4c2beaae50478a626995130d2611c628b7a568cd0799022758c05658928410c
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.3'
+    source:
+      registry_url: https://components.espressif.com
+      type: service
+    version: 0.1.4
+  espressif/led_strip:
+    component_hash: 28c6509a727ef74925b372ed404772aeedf11cce10b78c3f69b3c66799095e2d
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.4'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 2.5.5
+  idf:
+    source:
+      type: idf
+    version: 5.5.1
+  ot_examples_common:
+    dependencies:
+    - name: cmd_system
+      path: ${IDF_PATH}/examples/system/console/advanced/components/cmd_system
+    source:
+      path: C:\Users\mateo\esp\v5.5\esp-idf\examples\openthread\ot_common_components\ot_examples_common
+      type: local
+    version: '*'
+  ot_led:
+    dependencies:
+    - name: espressif/led_strip
+      version: ^2.4.1
+    source:
+      path: C:\Users\mateo\esp\v5.5\esp-idf\examples\openthread\ot_common_components\ot_led
+      type: local
+    version: '*'
+direct_dependencies:
+- espressif/esp_ot_cli_extension
+- idf
+- ot_examples_common
+- ot_led
+manifest_hash: a1498b33703a06c971634a47fa5b30798f1bd4fcd5ed7e84731d8b97c6f62bd6
+target: esp32c6
+version: 2.0.0
