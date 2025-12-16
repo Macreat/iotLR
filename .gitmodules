@@ -1,3 +1,12 @@
 [submodule "cloneReps/4201327-IoT_Systems_Design_Labs"]
 	path = cloneReps/4201327-IoT_Systems_Design_Labs
 	url = git@github.com:saacifuentesmu/4201327-IoT_Systems_Design_Labs.git
+[submodule "ESPSamples/Demo_IoT_MQTT_SERVER"]
+	path = ESPSamples/Demo_IoT_MQTT_SERVER
+	url = git@github.com:Edward1304/Demo_IoT_MQTT_SERVER.git
+[submodule "project/Demo_IoT_MQTT_SERVER"]
+	path = project/Demo_IoT_MQTT_SERVER
+	url = git@github.com:Edward1304/Demo_IoT_MQTT_SERVER.git
+[submodule "project/IoT_MQTT_SERVER/Demo_IoT_MQTT_SERVER"]
+	path = project/IoT_MQTT_SERVER/Demo_IoT_MQTT_SERVER
+	url = git@github.com:Edward1304/Demo_IoT_MQTT_SERVER.git
